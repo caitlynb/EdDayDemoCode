@@ -5,9 +5,9 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-package org.usfirst.frc.team3941.robot;
+package frc.robot;
 
-import edu.wpi.first.wpilibj.DriverStation;
+//import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.I2C;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotController;
@@ -48,7 +48,7 @@ public class Robot extends TimedRobot {
 	// Arduino I2C Stuff
 	private I2C I2CArduino = new I2C(I2C.Port.kOnboard, 0x08);
 	private byte arduinoData[] = new byte[3];
-	private byte arduinoReceive[] = new byte[3];
+	//private byte arduinoReceive[] = new byte[3];
 	
 	// Battery monitor stuff
 	private double curBatteryVoltage;
